@@ -17,7 +17,7 @@ const RemoSystemCheck =()=>{
         <div className="d-flex flex-row  justify-content-center mt-5 jumbotron">
             <div className="d-flex flex-column mr-5">
             <h5>System Check Passed</h5>
-                <HighInternetSpeed />
+                {/* <HighInternetSpeed /> */}
                 <div className="">
                     <DetectOsBrowser />
                 </div>
