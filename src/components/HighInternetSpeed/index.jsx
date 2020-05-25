@@ -23,7 +23,7 @@ const HighInternetSpeed = () =>{
         //     speedBps + " bps\n"   + 
         //     speedKbps + " kbps\n" + 
         //     speedMbps + " Mbps\n" );
-        console.log("SS",speedMbps)
+        console.log("donwloading",speedMbps)
     }
 }
 
