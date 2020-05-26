@@ -3,10 +3,10 @@ import React, {useState} from 'react'
 const WebCamTest = (props) =>{
     const constraints = {
         audio: false,
-        video: { width: 1280, height: 720 },
+        video: { width: 300, height: 200 },
     }; 
 
-    // const [audio , setAdio] = useState(false)
+    const [live , setLive] = useState(false)
     // const [video , setVideo] = useState({ width: 1280, height: 720 })
 
 
@@ -21,8 +21,11 @@ const WebCamTest = (props) =>{
                     //show webcam stream
                     let videoIn = document.createElement("video");
                     videoIn.autoplay = true;
-                    document.body.appendChild(videoIn);
-                    videoIn.srcObject = stream;
+                    // document.body.appendChild(videoIn); 
+                    document.getElementById("videoStrem").appendChild(videoIn); 
+                    videoIn.srcObject = stream; 
+                    setLive(true)
+
                 })
                 .catch(function(err) {
                     console.log("Unable to capture WebCam.", err);
@@ -31,8 +34,8 @@ const WebCamTest = (props) =>{
     }
     
     return <div>
-        <button onClick={cameratest}>Camera Test</button>
-        <div></div>
+        <button onClick={cameratest} disabled={live}>Camera Test</button>
+        <div id="videoStrem" className="mt-2" ></div> 
     </div>
 }
 
