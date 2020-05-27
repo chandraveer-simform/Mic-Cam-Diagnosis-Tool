@@ -33,7 +33,7 @@ const HighInternetSpeed = () =>{
                 var speedBps = (bitsLoaded / duration).toFixed(2);
                 var speedKbps = (speedBps / 1024).toFixed(2);
                 var speedMbps = (speedKbps / 1024).toFixed(2); 
-                console.log("dd");
+                // console.log("dd");
                 return speedMbps;   
             }  
     },[count])
@@ -61,7 +61,7 @@ const HighInternetSpeed = () =>{
                             // update( speed, average ); 
                             var speedKbps = (speed / 1024).toFixed(2);
                             var speedMbps = (speedKbps / 1024).toFixed(2);  
-                            console.log("SS",speedMbps)
+                            // console.log("SS",speedMbps)
                             if(uploadSpeed < speedMbps)
                             {   
                                 setUploadSpeed(speedMbps)

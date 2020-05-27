@@ -6,7 +6,9 @@ import AudioPlay from '../../components/AudioPlay'
 import MircophoneTest from '../../components/MicrophoneTest'
 import WebCamTest from '../../components/WebCamTest'
  
-import ringtone from "../../assets/famus_ring.mp3"
+ 
+// import ringtone from '../../assets/famus_ring.mp3'
+const ringtone = require("../../assets/famus_ring.mp3");
 const RemoSystemCheck =()=>{
    
     return <div className="component p-5">

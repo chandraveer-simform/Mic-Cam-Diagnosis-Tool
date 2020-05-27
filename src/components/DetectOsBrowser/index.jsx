@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react'
-import useragent from 'useragent' 
+// import useragent from 'useragent' 
+var useragent = require('useragent');
 
 const DetectOsBrowser = (props) =>{
 
